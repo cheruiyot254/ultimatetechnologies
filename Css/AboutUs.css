@@ -1,0 +1,180 @@
+body 
+{
+    background-color:#F6F6F6;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+#topspacing
+{
+    height: 5%;
+}
+
+#navbar 
+{
+   background-color:   #009CDE;
+   height: 5%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ 
+}
+
+#navbody
+{
+    display:  flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    /*background-color: violet;*/
+}
+
+.tablink
+{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    color: #FFFFFF;
+    font-size: large;
+}
+
+#tabpage 
+{
+    height: 65%;
+   /* background-color: red;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.tabcontent
+{
+    width: 70%;
+    height: 100%;
+    background-color: #FFFFFF;
+
+}
+
+/****Tab Content****/
+
+
+#About
+{
+    display: flex;
+   /* background-color: red;*/
+}
+#aboutcontent
+{
+    /*background-color: aqua;*/
+    padding: 2%;
+    width: 80%;
+    height: 50%;
+}
+
+
+
+#footer
+{
+
+    height: 25%;
+    width: 100%;
+   /* background-color:yellow;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footertopsection
+{
+    background-color: #009CDE;
+    width: 70%;
+    height: 60%;
+    display: flex;
+}
+
+#footertopsectionlayout
+{
+
+}
+#label
+{
+    flex:.5;
+   /* background-color: yellow;*/
+    padding-left: 2%;
+}
+.labeltext
+{
+    color: #FFFFFF;
+}
+
+#pagelinks
+{    
+    flex:.25;
+   /* background-color: yellowgreen;*/
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-left: 5%;
+
+}
+
+.links
+{
+    color: #FFFFFF;
+}
+
+#socialmedialinks
+{
+    flex:.25;
+    /*background-color: purple;*/
+    display: flex;
+    flex-direction: column;
+
+}
+
+#socialmedialabel{
+   flex: .40; 
+ /*  background-color: aqua;*/
+   align-items: center;
+   justify-content: flex-start;
+}
+
+#socialmedialogos
+{
+    flex: .20;
+   /* background-color: aquamarine;*/
+}
+
+svg
+{
+    fill: #FFFFFF;
+    margin-right: 5%;
+}
+#extraspace
+{
+    flex: .40;
+}
+
+
+#footermidsection
+{
+    background-color:  #525A5C;
+    width: 70%;
+    height: 20%;
+
+}
+
+
+#footerbottomsection
+{
+    background-color: #000000 ;
+    width: 70%;
+    height: 20%;
+}
+
+

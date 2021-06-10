@@ -1,0 +1,391 @@
+body 
+{
+    background-color:#F6F6F6;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+#topspacing
+{
+    height: 5%;
+}
+
+#navbar 
+{
+   background-color:   #009CDE;
+   height: 5%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ 
+}
+
+#navbody
+{
+    display:  flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    /*background-color: violet;*/
+}
+
+.tablink
+{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    color: #FFFFFF;
+    font-size: large;
+}
+
+#tabpage 
+{
+    height: 65%;
+   /* background-color: red;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.tabcontent
+{
+    width: 70%;
+    height: 100%;
+    background-color: #FFFFFF;
+
+}
+
+/****Tab Content****/
+
+
+/********Home**************/
+#homelayout
+{    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+#hometab
+{
+    background-color: seagreen;
+    flex: .3;
+
+}
+
+
+
+#homeinfo
+{
+   
+    flex: .7;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+#homeimage
+{
+    width: 500px;
+    height: 500px;
+}
+
+
+
+/********Services**************/
+
+#serviceslayout
+{    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+#servicestab
+{
+    background-color: seagreen;
+    flex: .3;
+
+}
+
+
+
+
+
+#homeproductsnservicestab
+{
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+
+
+#productstab
+{
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+
+}
+
+
+#servicetab
+{
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+
+}
+
+.hometabbutton
+{
+
+    width: 100%;
+    height: 10%;
+    border: none;
+}
+
+.producttabbutton
+{
+
+    width: 100%;
+    height: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: none;
+
+}
+
+.servicestabbutton
+{
+
+    width: 100%;
+    height: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: none;
+}
+
+
+
+#productsnservices
+{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    
+}
+
+.productsnservicecontainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 90%;
+    
+    /*background-color: brown;*/
+}
+
+.productnserviceitem
+{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    background-color: #FFFFFF;
+    border-width: thin;
+    border-radius: 5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 5px;
+
+}
+
+
+
+#itemimagecontainer{
+    flex: 4;
+    /*background-color: red;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#itemtitlecontainer{
+    flex: 1;
+    /*background-color: green;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.itemimage{
+    max-width: 80%; 
+}
+
+.itemtext {
+ color: #009CDE;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer
+{
+
+    height: 25%;
+    width: 100%;
+   /* background-color:yellow;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footertopsection
+{
+    background-color: #009CDE;
+    width: 70%;
+    height: 60%;
+    display: flex;
+}
+
+#footertopsectionlayout
+{
+
+}
+#label
+{
+    flex:.5;
+   /* background-color: yellow;*/
+    padding-left: 2%;
+}
+.labeltext
+{
+    color: #FFFFFF;
+}
+
+#pagelinks
+{    
+    text-decoration: none;
+    flex:.25;
+   /* background-color: yellowgreen;*/
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-left: 5%;
+
+}
+
+.links
+{
+    color: #FFFFFF;
+}
+
+#socialmedialinks
+{
+    flex:.25;
+    /*background-color: purple;*/
+    display: flex;
+    flex-direction: column;
+
+}
+
+#socialmedialabel{
+   flex: .40; 
+ /*  background-color: aqua;*/
+   align-items: center;
+   justify-content: flex-start;
+}
+
+#socialmedialogos
+{
+    flex: .20;
+   /* background-color: aquamarine;*/
+}
+
+svg
+{
+    fill: #FFFFFF;
+    margin-right: 5%;
+}
+#extraspace
+{
+    flex: .40;
+}
+
+
+#footermidsection
+{
+    background-color:  #525A5C;
+    width: 70%;
+    height: 20%;
+
+}
+
+
+#footerbottomsection
+{
+    background-color: #000000 ;
+    width: 70%;
+    height: 20%;
+}
+
+

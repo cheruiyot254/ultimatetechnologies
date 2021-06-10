@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Our Services</title>
+    <link rel="stylesheet" href="./../Css/Services.css" />
+</head>
+
+<body>
+    <div id="topspacing">
+
+    </div>
+
+    <!--- Nav bar --->
+
+    <div id="navbar">
+        <div id="navbody">
+            <a class="tablink" href="./../index.html" >Home</a>
+            <a class="tablink" href="./Products.html" >Products</a>
+            <a class="tablink" href="./Services.html" >Services</a>
+            <a class="tablink" href="./ContactUs.html" >Contact</a>
+            <a class="tablink" href="./AboutUs.html" >About Us</a>
+        </div>
+    </div>
+
+    <!--- Page Content --->
+    <div id="tabpage">
+        <div id="Services" class="tabcontent">
+           
+            <div id="serviceslayout">
+                <div id="servicestab">
+                    <div id="servicetab" >
+                        <button class="servicestabbutton" onclick="openTab('computerrepairs',this,'#009CDE')" id="defaultOpen">Computer Repairs</button>
+                        <button class="servicestabbutton" onclick="openTab('softwareinstallation',this,'#009CDE')">Software Installations</button>
+                    </div>
+                </div>
+                
+                <div id="productsnservices">
+                     <!--------Computer Repairs------------> 
+                    <div id="computerrepairs" class="productsnservicecontainer">
+                        <div class="productnserviceitem">
+                            <div id="itemimagecontainer">
+                                 <img class="itemimage" src="./../Resources/Services/Computer Repairs/Motherboard Replacement.jpg">
+                            </div>
+                            <div id="itemtitlecontainer">
+                                <p class="itemtext"> Motherboard Replacement</p>
+                            </div>
+                        </div>
+
+                        <div class="productnserviceitem">
+                            <div id="itemimagecontainer">
+                                 <img class="itemimage" src="./../Resources/Services/Computer Repairs/Ram Upgrades.jpg">
+                            </div>
+                            <div id="itemtitlecontainer">
+                                <p class="itemtext"> Ram Upgrades</p>
+                            </div>
+                        </div>
+
+                        <div class="productnserviceitem">
+                            <div id="itemimagecontainer">
+                                 <img class="itemimage" src="./../Resources/Services/Computer Repairs/Storage Upgrades.jpg">
+                            </div>
+                            <div id="itemtitlecontainer">
+                                <p class="itemtext"> Storage Upgrades</p>
+                            </div>
+                        </div>     
+                    </div> 
+
+
+                     <!--------Software Installation------------> 
+                    <div id="softwareinstallation" class="productsnservicecontainer">
+                        <div class="productnserviceitem">
+                            <div id="itemimagecontainer">
+                                 <img class="itemimage" src="./../Resources/Services/Software Installation/Adobe.jpg">
+                            </div>
+                            <div id="itemtitlecontainer">
+                                <p class="itemtext"> Adobe Suite</p>
+                            </div>
+                        </div>
+
+                        <div class="productnserviceitem">
+                            <div id="itemimagecontainer">
+                                 <img class="itemimage" src="./../Resources/Services/Software Installation/Antivirus.jpg">
+                            </div>
+                            <div id="itemtitlecontainer">
+                                <p class="itemtext"> Antivirus Software</p>
+                            </div>
+                        </div>
+
+                        <div class="productnserviceitem">
+                            <div id="itemimagecontainer">
+                                 <img class="itemimage" src="./../Resources/Services/Software Installation/Microsoft Office.jpg">
+                            </div>
+                            <div id="itemtitlecontainer">
+                                <p class="itemtext">Microsoft Office</p>
+                            </div>
+                        </div> 
+                        
+                        <div class="productnserviceitem">
+                            <div id="itemimagecontainer">
+                                 <img class="itemimage" src="./../Resources/Services/Software Installation/Windows.jpg">
+                            </div>
+                            <div id="itemtitlecontainer">
+                                <p class="itemtext">Microsoft Windows 10</p>
+                            </div>
+                        </div> 
+                    </div>  
+                </div>
+
+            </div>
+        </div>
+    </div>    
+
+
+    
+<!--Script-->
+
+<script>
+    function openTab(tabName, elmnt, color) {
+        // Hide all elements with class="tabcontent" by default */
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("productsnservicecontainer");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Remove the background color of all tablinks/buttons
+        tablinks = document.getElementsByClassName("servicestabbutton");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+
+        // Show the specific tab content
+        document.getElementById(tabName).style.display = "flex";
+  
+        // Add the specific color to the button used to open the tab content
+        elmnt.style.backgroundColor = color;
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+
+
+
+
+
+    <!--- Footer Content --->
+    <div id="footer">
+        <div id="footertopsection">
+            <div id="label">
+                <h1 class="labeltext">ULTIMATE</h6>
+                    <h1 class="labeltext">TECHNOLOGIES</h6>
+
+            </div>
+            <div id="pagelinks">
+                <a class="links" href="./Products.html" >Our Products</a>
+                <a class="links" href="./Services.html" >Our Services</a>
+                <a class="links" href="./ContactUs.html" >Contact Us</a>
+                <a class="links" href="./AboutUs.html" >About Us</a>
+            </div>
+            <div id="socialmedialinks">
+                <div id="socialmedialabel">
+                    <h4 class="labeltext">Follow Us</h4>
+                </div>
+                <div id="socialmedialogos">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                    </svg>
+                </div>
+                <div id="extraspace">
+
+                </div>
+
+            </div>
+
+        </div>
+        <div id="footermidsection">
+
+        </div>
+        <div id="footerbottomsection">
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
