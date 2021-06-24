@@ -94,8 +94,8 @@ body
 
 .productnserviceimage
 {
-    width: 500px;
-    height: 500px;
+    width: 25vw;
+    height: 25vw;
 }
 
 .productnservicedescription
@@ -103,7 +103,7 @@ body
     position:absolute;
     align-self: center;
     color: #009CDE;
-    margin-top: 500px;
+    margin-top: 10vh;
 }
 
 .infocontainer 
